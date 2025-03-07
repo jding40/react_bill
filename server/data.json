@@ -3,86 +3,191 @@
     {
       "type": "pay",
       "money": -99,
-      "date": "2022-10-24 10:36:42",
-      "useFor": "drinks",
+      "date": "2024-10-24 10:36:42",
+      "useFor": "Drinks",
       "id": 1
     },
     {
       "type": "pay",
       "money": -88,
-      "date": "2022-10-24 10:37:51",
-      "useFor": "longdistance",
+      "date": "2024-10-24 10:37:51",
+      "useFor": "Tours",
       "id": 2
     },
     {
       "type": "income",
       "money": 100,
-      "date": "2022-10-22 00:00:00",
-      "useFor": "bonus",
+      "date": "2024-10-22 00:00:00",
+      "useFor": "Bonus",
       "id": 3
     },
     {
       "type": "pay",
       "money": -33,
-      "date": "2022-09-24 16:15:41",
-      "useFor": "dessert",
+      "date": "2024-09-24 16:15:41",
+      "useFor": "Desserts",
       "id": 4
     },
     {
       "type": "pay",
       "money": -56,
-      "date": "2022-10-22T05:37:06.000Z",
-      "useFor": "drinks",
+      "date": "2024-10-22T05:37:06.000Z",
+      "useFor": "Drinks",
       "id": 5
     },
     {
       "type": "pay",
       "money": -888,
-      "date": "2022-10-28T08:21:42.135Z",
-      "useFor": "travel",
+      "date": "2024-10-28T08:21:42.135Z",
+      "useFor": "Travel",
       "id": 6
     },
     {
       "type": "income",
       "money": 10000,
-      "date": "2023-03-20T06:45:54.004Z",
-      "useFor": "salary",
+      "date": "2024-03-20T06:45:54.004Z",
+      "useFor": "Basic Salary",
       "id": 7
     },
     {
       "type": "pay",
       "money": -10,
-      "date": "2023-03-22T07:17:12.531Z",
-      "useFor": "drinks",
+      "date": "2024-03-22T07:17:12.531Z",
+      "useFor": "Drinks",
       "id": 8
     },
     {
       "type": "pay",
       "money": -20,
-      "date": "2023-03-22T07:51:20.421Z",
-      "useFor": "dessert",
+      "date": "2024-03-22T07:51:20.421Z",
+      "useFor": "Desserts",
       "id": 9
     },
     {
       "type": "pay",
       "money": -100,
-      "date": "2023-03-22T09:18:12.898Z",
-      "useFor": "drinks",
-      "id": 17
+      "date": "2024-03-22T09:18:12.898Z",
+      "useFor": "Drinks",
+      "id": 10
     },
     {
       "type": "pay",
       "money": -50,
-      "date": "2023-03-23T09:11:23.312Z",
-      "useFor": "food",
-      "id": 18
+      "date": "2025-03-23T09:11:23.312Z",
+      "useFor": "Foods",
+      "id": 11
     },
     {
       "type": "pay",
       "money": -10,
-      "date": "2023-04-03T11:14:56.036Z",
-      "useFor": "food",
-      "id": 19
+      "date": "2025-04-03T11:14:56.036Z",
+      "useFor": "Foods",
+      "id": 12
+    },
+    {
+      "type": "pay",
+      "money": -10,
+      "date": "2025-02-06T11:14:56.036Z",
+      "useFor": "Foods",
+      "id": 23
+    },
+    {
+      "type": "pay",
+      "money": -10.9,
+      "date": "2025-02-03T11:14:56.036Z",
+      "useFor": "Foods",
+      "id": 14
+    },
+    {
+      "type": "income",
+      "money": 723,
+      "date": "2025-02-12T11:24:56.036Z",
+      "useFor": "Basic Salary",
+      "id": 15
+    },
+    {
+      "type": "pay",
+      "money": -10.9,
+      "date": "2025-02-12T11:14:58.036Z",
+      "useFor": "Foods",
+      "id": 16
+    },
+    {
+      "id": 17,
+      "type": "pay",
+      "money": -20,
+      "date": "2025-03-06T20:15:27.725Z",
+      "useFor": "Drinks"
+    },
+    {
+      "id": 18,
+      "type": "pay",
+      "money": -21,
+      "date": "2025-03-06T20:15:35.961Z",
+      "useFor": "Desserts"
+    },
+    {
+      "id": 19,
+      "type": "pay",
+      "money": -23,
+      "date": "2025-03-06T20:15:43.155Z",
+      "useFor": "Tours"
+    },
+    {
+      "id": 20,
+      "type": "pay",
+      "money": -23,
+      "date": "2025-03-06T20:15:53.039Z",
+      "useFor": "Games"
+    },
+    {
+      "id": 21,
+      "type": "pay",
+      "money": -23,
+      "date": "2025-03-06T20:15:59.661Z",
+      "useFor": "Promote"
+    },
+    {
+      "id": 22,
+      "type": "pay",
+      "money": -24,
+      "date": "2025-03-06T20:16:07.326Z",
+      "useFor": "Games"
+    },
+    {
+      "id": 23,
+      "type": "pay",
+      "money": -15,
+      "date": "2025-03-06T20:16:13.680Z",
+      "useFor": "Taxi"
+    },
+    {
+      "id": 24,
+      "type": "pay",
+      "money": -23,
+      "date": "2025-03-06T23:09:50.555Z",
+      "useFor": "Foods"
+    },
+    {
+      "id": 25,
+      "type": "pay",
+      "money": -34,
+      "date": "2025-02-06T23:10:22.000Z",
+      "useFor": "Desserts"
+    },
+    {
+      "id": "5565",
+      "type": "income",
+      "money": 23,
+      "date": "2025-03-07T17:43:54.418Z",
+      "useFor": "Bonus"
+    },
+    {
+      "id": "9c5a",
+      "type": "pay",
+      "money": -24,
+      "date": "2025-03-07T17:44:29.370Z",
+      "useFor": "Taxi"
     }
   ]
 }

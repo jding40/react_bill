@@ -1,0 +1,12 @@
+{
+  "pay": {
+    "Dining": ["Foods", "Drinks", "Desserts"],
+    "Transport": ["Taxi", "Fuel", "Parking"],
+    "Entertainment": ["Gym", "Music & Movie", "Games", "Tours"],
+    "Daily Expense": ["Books", "Education", "Furniture", "Others"]
+  },
+  "income": {
+    "Salary": ["Basic Salary", "Bonus"],
+    "Other Income": ["Financial Income", "Government Subsidy", "Gifts"]
+  }
+}

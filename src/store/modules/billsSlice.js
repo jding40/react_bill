@@ -15,18 +15,57 @@ const billSlice = createSlice({
   name: "bills",
   initialState: {
     bills: [],
+    activeRoute: "",
+    newBill: {
+      type: "pay",
+      useFor: "food",
+      money: 0.0,
+      date: new Date().toISOString().slice(0, 10),
+      id: -1,
+    },
   },
   reducers: {
     addBill: (state, action) => {
       state.bills.push(action.payload);
+      state.newBill = {
+        type: state.newBill.type,
+        useFor: "",
+        money: 0.0,
+        date: new Date().toISOString().slice(0, 10),
+        id: -1,
+      };
+    },
+    setActiveRoute: (state, action) => {
+      state.activeRoute = action.payload;
+    },
+    setRecordType: (state, action) => {
+      state.newBill.type = action.payload;
+    },
+    setRecordUsage: (state, action) => {
+      state.newBill.useFor = action.payload;
+    },
+    setRecordNumber: (state, action) => {
+      state.newBill.money = action.payload;
+    },
+    setRecordDate: (state, action) => {
+      state.newBill.date = action.payload;
     },
   },
   extraReducers: (builder) => {
     builder.addCase(getBills.fulfilled, (state, action) => {
-      state.bills = action.payload;
+      console.log("state.bills is", state.bills);
+      console.log("action.payload is", action.payload);
+      state.bills = [...new Set(state.bills.concat(action.payload))];
     });
   },
 });
 
 export default billSlice.reducer;
-export const { addBill } = billSlice.actions;
+export const {
+  addBill,
+  setActiveRoute,
+  setRecordType,
+  setRecordUsage,
+  setRecordNumber,
+  setRecordDate,
+} = billSlice.actions;

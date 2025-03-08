@@ -73,14 +73,14 @@
     {
       "type": "pay",
       "money": -50,
-      "date": "2025-03-23T09:11:23.312Z",
-      "useFor": "Foods",
+      "date": "2025-03-02T09:11:23.312Z",
+      "useFor": "Fuel",
       "id": 11
     },
     {
       "type": "pay",
       "money": -10,
-      "date": "2025-04-03T11:14:56.036Z",
+      "date": "2025-03-03T11:14:56.036Z",
       "useFor": "Foods",
       "id": 12
     },
@@ -89,7 +89,7 @@
       "money": -10,
       "date": "2025-02-06T11:14:56.036Z",
       "useFor": "Foods",
-      "id": 23
+      "id": 13
     },
     {
       "type": "pay",
@@ -144,7 +144,7 @@
       "id": 21,
       "type": "pay",
       "money": -23,
-      "date": "2025-03-06T20:15:59.661Z",
+      "date": "2025-03-04T20:15:59.661Z",
       "useFor": "Promote"
     },
     {
@@ -176,18 +176,25 @@
       "useFor": "Desserts"
     },
     {
-      "id": "5565",
+      "id": 26,
       "type": "income",
       "money": 23,
       "date": "2025-03-07T17:43:54.418Z",
       "useFor": "Bonus"
     },
     {
-      "id": "9c5a",
+      "id": 27,
       "type": "pay",
       "money": -24,
       "date": "2025-03-07T17:44:29.370Z",
       "useFor": "Taxi"
+    },
+    {
+      "id": 28,
+      "type": "pay",
+      "money": -10,
+      "date": "2025-03-07T22:24:48.113Z",
+      "useFor": "Parking"
     }
   ]
 }

@@ -1,7 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import Menu from "@/components/Menu";
-import { Link, Outlet } from "react-router-dom";
+import { Link, Outlet, useNavigate } from "react-router-dom";
 import {
   setRecordType,
   setRecordUsage,
@@ -13,18 +12,22 @@ import { useDispatch, useSelector } from "react-redux";
 
 const Record_bill = () => {
   const dispatch = useDispatch();
+  const navigate = useNavigate();
 
   const { newBill, bills } = useSelector((state) => state.bills);
   return (
     <div className="flex flex-col justify-between w-full  px-3 h-full">
-      <header className=" h-fit">
+      <header className="h-fit">
         <h1 className="text-center text-xl font-bold p-2 relative">
           Record a bill
-          <Link to="/">
-            <span className="absolute material-symbols-outlined !text-3xl top-2 left-3">
-              arrow_back_ios
-            </span>
-          </Link>
+          {/* <Link to="/"> */}
+          <span
+            className="absolute material-symbols-outlined !text-3xl top-2 left-3"
+            onClick={() => navigate(-1)}
+          >
+            arrow_back_ios
+          </span>
+          {/* </Link> */}
         </h1>
 
         <div className="flex justify-center gap-x-6 py-4 h-[60px] rounded-xl border-1 m-2 items-center">
@@ -115,6 +118,7 @@ const Record_bill = () => {
           const newId =
             bills.reduce((cum, cur) => (cur.id > cum ? cur.id : cum), 0) + 1;
           dispatch(addBill({ ...newBill, id: newId }));
+          console.log("newId", newId);
           console.log("newBill", newBill);
           console.log("bills(after):", bills);
           alert("Bill saved successfully");

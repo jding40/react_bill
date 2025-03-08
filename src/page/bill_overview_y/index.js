@@ -71,6 +71,7 @@ const Bill_ov_y = () => {
           return (
             monthlyBills.length > 0 && (
               <BillCard
+                key={month}
                 billList={monthlyBills}
                 timeString={timeString}
                 pay={pay}

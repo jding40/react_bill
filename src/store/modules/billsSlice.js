@@ -53,9 +53,19 @@ const billSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(getBills.fulfilled, (state, action) => {
-      console.log("state.bills is", state.bills);
-      console.log("action.payload is", action.payload);
-      state.bills = [...new Set(state.bills.concat(action.payload))];
+      // console.log("state.bills is", state.bills);
+      // console.log("action.payload is", action.payload);
+      console.log("Current length of bills is", state.bills.length);
+      //state.bills = [...new Set(state.bills.concat(action.payload))];
+      state.bills = action.payload.reduce((acc, cur) => {
+        if (acc.find((bill) => bill.id === cur.id)) return acc;
+        else {
+          acc.push(cur);
+          return acc;
+        }
+      }, state.bills);
+      //state.bills = action.payload;
+      console.log("Current length of bills is", state.bills.length);
     });
   },
 });

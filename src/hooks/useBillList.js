@@ -8,7 +8,7 @@ export const useMonthlyBillList = (YYMM) => {
   const { bills } = useSelector((state) => state.bills);
 
   useEffect(() => {
-    dispatch(getBills("http://localhost:8888/ka"));
+    dispatch(getBills("https://react-bill.vercel.app/api/db"));
   }, [dispatch]);
 
   useEffect(() => {

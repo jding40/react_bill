@@ -16,7 +16,7 @@ const RecordIncome = () => {
         // console.log(key, value);
         return (
           <div id={key} className="mb-4 ">
-            <h1>
+            <h1 className="mb-2">
               <strong>{key}</strong>
             </h1>
             <div id={`${key}Group`} className="flex gap-x-4 flex-wrap">

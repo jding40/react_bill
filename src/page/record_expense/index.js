@@ -15,7 +15,7 @@ const RecordExpense = () => {
   return (
     <div className="border-1 rounded-xl py-2 px-2 pt-5 mx-2 my-4 overflow-y-auto scrollbar-hide flex-1 bg-slate-200">
       <div id="dining" className="mb-4">
-        <h1>
+        <h1 className="mb-2">
           <strong>Dining</strong>
         </h1>
         <div id="diningGroup" className="flex gap-x-4">
@@ -61,7 +61,7 @@ const RecordExpense = () => {
         </div>
       </div>
       <div id="transport" className="mb-4">
-        <h1>
+        <h1 className="mb-2">
           <strong>Transport</strong>
         </h1>
         <div id="transportGroup" className="flex gap-x-4">
@@ -107,7 +107,7 @@ const RecordExpense = () => {
         </div>
       </div>
       <div id="entertainment" className="mb-4">
-        <h1>
+        <h1 className="mb-2">
           <strong>Entertainment</strong>
         </h1>
         <div id="entertainmentGroup" className="flex gap-x-4">
@@ -169,8 +169,9 @@ const RecordExpense = () => {
           </div>
         </div>
       </div>
+
       <div id="dailyExpense">
-        <h1>
+        <h1 className="mb-2">
           <strong>Daily Expense</strong>
         </h1>
         <div id="dailyExpenseGroup" className="flex gap-x-4">

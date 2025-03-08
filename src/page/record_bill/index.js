@@ -125,7 +125,8 @@ const Record_bill = () => {
           console.log("newId", newId);
           console.log("newBill", newBill);
           console.log("bills(after):", bills);
-          fetch("http://localhost:8888/ka", {
+          // http://localhost:8888/ka
+          fetch("https://react-bill.vercel.app/api/db", {
             method: "POST",
             body: JSON.stringify(updatedNewBill),
           });

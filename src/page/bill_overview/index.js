@@ -10,7 +10,7 @@ const Bill_ov = () => {
   console.log("bills is", bills);
   useEffect(() => {
     console.log("useEffect is called");
-    dispatch(getBills("https://coca-portfolio.vercel.app/api/db"));
+    dispatch(getBills("https://react-bill.vercel.app/api/db"));
   }, []);
   console.log("bills after useEffect is", bills);
   return (

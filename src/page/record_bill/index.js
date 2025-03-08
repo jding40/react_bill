@@ -23,7 +23,10 @@ const Record_bill = () => {
           {/* <Link to="/"> */}
           <span
             className="absolute material-symbols-outlined !text-3xl top-2 left-3"
-            onClick={() => navigate(-1)}
+            onClick={() => {
+              navigate("/");
+              dispatch(setRecordType("pay"));
+            }}
           >
             arrow_back_ios
           </span>

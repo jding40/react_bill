@@ -120,10 +120,15 @@ const Record_bill = () => {
           }
           const newId =
             bills.reduce((cum, cur) => (cur.id > cum ? cur.id : cum), 0) + 1;
-          dispatch(addBill({ ...newBill, id: newId }));
+          const updatedNewBill = { ...newBill, id: newId };
+          dispatch(addBill(updatedNewBill));
           console.log("newId", newId);
           console.log("newBill", newBill);
           console.log("bills(after):", bills);
+          fetch("http://localhost:8888/ka", {
+            method: "POST",
+            body: JSON.stringify(updatedNewBill),
+          });
           alert("Bill saved successfully");
         }}
       >

@@ -195,6 +195,34 @@
       "money": -10,
       "date": "2025-03-07T22:24:48.113Z",
       "useFor": "Parking"
+    },
+    {
+      "id": 29,
+      "type": "pay",
+      "useFor": "Education",
+      "money": -1200,
+      "date": "2025-03-08"
+    },
+    {
+      "id": 30,
+      "type": "income",
+      "useFor": "Government Subsidy",
+      "money": 200,
+      "date": "2025-03-08"
+    },
+    {
+      "id": 31,
+      "type": "pay",
+      "useFor": "Drinks",
+      "money": -30,
+      "date": "2025-03-08"
+    },
+    {
+      "id": 32,
+      "type": "pay",
+      "useFor": "Furniture",
+      "money": -50,
+      "date": "2025-03-08"
     }
   ]
 }

@@ -11,6 +11,7 @@
   "Fuel": "local_gas_station",
   "Parking": "local_parking",
   "Promote": "place_item",
+  "Gym": "fitness_center",
   "Music & Movie": "live_tv",
   "Tours": "travel_explore",
   "Education": "school",

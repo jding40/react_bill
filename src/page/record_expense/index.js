@@ -21,7 +21,7 @@ const RecordExpense = () => {
         <div id="diningGroup" className="flex gap-x-4">
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Foods",
+              "text-green-500 relative bottom-1": newBill.useFor === "Foods",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Foods"));
@@ -35,7 +35,7 @@ const RecordExpense = () => {
 
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Drinks",
+              "text-green-500 relative bottom-1": newBill.useFor === "Drinks",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Drinks"));
@@ -47,7 +47,7 @@ const RecordExpense = () => {
 
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Desserts",
+              "text-green-500 relative bottom-1": newBill.useFor === "Desserts",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Desserts"));
@@ -67,7 +67,7 @@ const RecordExpense = () => {
         <div id="transportGroup" className="flex gap-x-4">
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Taxi",
+              "text-green-500 relative bottom-1": newBill.useFor === "Taxi",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Taxi"));
@@ -80,7 +80,7 @@ const RecordExpense = () => {
           </div>
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Fuel",
+              "text-green-500 relative bottom-1": newBill.useFor === "Fuel",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Fuel"));
@@ -93,7 +93,7 @@ const RecordExpense = () => {
           </div>
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Parking",
+              "text-green-500 relative bottom-1": newBill.useFor === "Parking",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Parking"));
@@ -113,7 +113,7 @@ const RecordExpense = () => {
         <div id="entertainmentGroup" className="flex gap-x-4">
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Gym",
+              "text-green-500 relative bottom-1": newBill.useFor === "Gym",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Gym"));
@@ -127,7 +127,7 @@ const RecordExpense = () => {
 
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Games",
+              "text-green-500 relative bottom-1": newBill.useFor === "Games",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Games"));
@@ -141,7 +141,8 @@ const RecordExpense = () => {
 
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Music & Movie",
+              "text-green-500 relative bottom-1":
+                newBill.useFor === "Music & Movie",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Music & Movie"));
@@ -155,7 +156,7 @@ const RecordExpense = () => {
 
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Tours",
+              "text-green-500 relative bottom-1": newBill.useFor === "Tours",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Tours"));
@@ -175,7 +176,7 @@ const RecordExpense = () => {
         <div id="dailyExpenseGroup" className="flex gap-x-4">
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Books",
+              "text-green-500 relative bottom-1": newBill.useFor === "Books",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Books"));
@@ -188,7 +189,8 @@ const RecordExpense = () => {
           </div>
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Education",
+              "text-green-500 relative bottom-1":
+                newBill.useFor === "Education",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Education"));
@@ -199,7 +201,8 @@ const RecordExpense = () => {
           </div>
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Furniture",
+              "text-green-500 relative bottom-1":
+                newBill.useFor === "Furniture",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Furniture"));
@@ -210,7 +213,7 @@ const RecordExpense = () => {
           </div>
           <div
             className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500": newBill.useFor === "Others",
+              "text-green-500 relative bottom-1": newBill.useFor === "Others",
             })}
             onClick={() => {
               dispatch(setRecordUsage("Others"));

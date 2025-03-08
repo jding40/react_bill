@@ -24,9 +24,10 @@ const RecordIncome = () => {
                 <div
                   key={type}
                   className={classNames(
-                    "flex flex-col px-3 w-[160px] items-center ",
+                    "flex flex-col px-3 w-[160px] items-center cursor-pointer",
                     {
-                      "text-blue-600": newBill.useFor === type,
+                      "text-blue-600 relative bottom-1":
+                        newBill.useFor === type,
                     }
                   )}
                   onClick={() => {

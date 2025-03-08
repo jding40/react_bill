@@ -13,7 +13,7 @@ const RecordExpense = () => {
   const dispatch = useDispatch();
   const { newBill } = useSelector((state) => state.bills);
   return (
-    <div className="border-1 rounded-xl py-2 px-2  mx-2 my-4 overflow-y-auto scrollbar-hide flex-1 bg-slate-200">
+    <div className="border-1 rounded-xl py-2 px-2 pt-5 mx-2 my-4 overflow-y-auto scrollbar-hide flex-1 bg-slate-200">
       <div id="dining" className="mb-4">
         <h1>
           <strong>Dining</strong>

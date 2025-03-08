@@ -1,22 +1,30 @@
 {
-  "Drinks": "coffee",
-  "longdistance": "social_distance",
-  "Bonus": "heart_minus",
-  "Desserts": "cookie",
-  "Travel": "flight_takeoff",
-  "Basic Salary": "account_balance_wallet",
   "Foods": "lunch_dining",
-  "Games": "sports_esports",
+  "Drinks": "coffee",
+  "Desserts": "cookie",
+
   "Taxi": "local_taxi",
   "Fuel": "local_gas_station",
   "Parking": "local_parking",
-  "Promote": "place_item",
+
   "Gym": "fitness_center",
+  "Games": "sports_esports",
   "Music & Movie": "live_tv",
   "Tours": "travel_explore",
+
+  "Books": "menu_book",
   "Education": "school",
-  "Others": "other_admission",
   "Furniture": "chair",
+  "Others": "other_admission",
+
+  "Travel": "flight_takeoff",
+
+  "longdistance": "social_distance",
+  "Promote": "place_item",
+
+  "Basic Salary": "account_balance_wallet",
+  "Bonus": "heart_minus",
+
   "Financial Income": "credit_card_clock",
   "Government Subsidy": "account_balance",
   "Gifts": "featured_seasonal_and_gifts"

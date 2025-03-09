@@ -44,12 +44,12 @@ const BillCard = ({ billList, timeString, pay, income }) => {
         <div onClick={clickHandler}>
           {expand && (
             <span className="material-symbols-outlined  !text-2xl cursor-pointer">
-              stat_minus_1
+              stat_1
             </span>
           )}
           {!expand && (
             <span className="material-symbols-outlined  !text-2xl cursor-pointer">
-              stat_1
+              stat_minus_1
             </span>
           )}
         </div>

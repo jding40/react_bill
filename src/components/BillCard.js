@@ -7,6 +7,7 @@ import BillsModal from "./BillsModal";
 const BillCard = ({ billList, timeString, pay, income }) => {
   const [expand, setExpand] = useState(false);
   const [modalOpen, setModalOpen] = useState(false);
+  const [modalType, setModalType] = useState("");
   const [selectedBills, setSelectedBills] = useState([]);
   console.log(`bill list for ${timeString} is`, billList);
 
@@ -78,6 +79,7 @@ const BillCard = ({ billList, timeString, pay, income }) => {
               className="flex justify-between p-1"
               onClick={() => {
                 setModalOpen(true);
+                setModalType(key);
                 setSelectedBills(
                   billList.filter((bill) => bill.useFor === key)
                 );
@@ -94,7 +96,12 @@ const BillCard = ({ billList, timeString, pay, income }) => {
           ))}
       </div>
       {modalOpen && (
-        <BillsModal bills={selectedBills} onClose={() => setModalOpen(false)} />
+        <BillsModal
+          bills={selectedBills}
+          timeString={timeString}
+          modalType={modalType}
+          onClose={() => setModalOpen(false)}
+        />
       )}
     </div>
   );

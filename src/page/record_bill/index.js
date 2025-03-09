@@ -83,7 +83,8 @@ const Record_bill = () => {
             min={0}
             placeholder={(0.0).toFixed(2)}
             className="w-full border-1 rounded-xl py-2 px-10 text-right mx-2"
-            value={newBill.type === "pay" ? -newBill.money : newBill.money}
+            // value={newBill.type === "pay" ? -newBill.money : newBill.money}
+            value={Math.abs(newBill.money).toFixed(2)}
             onChange={(e) =>
               dispatch(
                 setRecordNumber(

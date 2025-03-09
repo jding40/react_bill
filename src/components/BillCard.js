@@ -71,7 +71,11 @@ const BillCard = ({ billList, timeString, pay, income }) => {
           <strong>Balance:</strong> {(pay + income).toFixed(2)}
         </span>
       </div>
-      <div className={classNames("mt-2 w-[450px]", { "border-t-1": expand })}>
+      <div
+        className={classNames("mt-2 w-full", {
+          "border-t-1": expand,
+        })}
+      >
         {expand &&
           Object.entries(groupedAmount).map(([key, value]) => (
             <div

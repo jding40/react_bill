@@ -116,12 +116,14 @@ const Bill_ov_m = () => {
             Bill of {year} / {String(month).padStart(2, "0")}
           </span>
           {!expand && (
-            <span className="material-symbols-outlined  !text-2xl">
+            <span className="material-symbols-outlined  !text-2xl cursor-pointer">
               stat_minus_1
             </span>
           )}
           {expand && (
-            <span className="material-symbols-outlined !text-2xl">stat_1</span>
+            <span className="material-symbols-outlined !text-2xl cursor-pointer">
+              stat_1
+            </span>
           )}
         </div>
 
@@ -149,13 +151,13 @@ const Bill_ov_m = () => {
       {expand && (
         <div className="mx-3 px-2 flex gap-x-3 md:gap-x-16 xl:gap-x-20  items-center justify-around md:justify-start h-fit">
           <span
-            className="material-symbols-outlined  !text-3xl "
+            className="material-symbols-outlined  !text-3xl cursor-pointer"
             onClick={() => reduceYear()}
           >
             stat_2
           </span>
           <span
-            className="material-symbols-outlined  !text-3xl "
+            className="material-symbols-outlined  !text-3xl cursor-pointer"
             onClick={() => reduceMonth()}
           >
             stat_1
@@ -175,13 +177,13 @@ const Bill_ov_m = () => {
             onChange={(e) => changeHandler(e)}
           />
           <span
-            className="material-symbols-outlined  !text-3xl "
+            className="material-symbols-outlined  !text-3xl cursor-pointer"
             onClick={() => addMonth()}
           >
             stat_minus_1
           </span>
           <span
-            className="material-symbols-outlined  !text-3xl "
+            className="material-symbols-outlined  !text-3xl cursor-pointer"
             onClick={() => addYear()}
           >
             stat_minus_2

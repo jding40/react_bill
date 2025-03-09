@@ -100,7 +100,7 @@ const Record_bill = () => {
             value={newBill.date}
             onChange={(e) => dispatch(setRecordDate(e.target.value))}
           />
-          <span className="absolute top-2 right-10">$</span>
+          <span className="absolute top-2 right-10 text-gray-300 pe-1">$</span>
         </div>
       </header>
       <Outlet />

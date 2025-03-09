@@ -22,7 +22,7 @@ const Record_bill = () => {
           Record a bill
           {/* <Link to="/"> */}
           <span
-            className="absolute material-symbols-outlined !text-3xl top-2 left-3"
+            className="absolute material-symbols-outlined !text-3xl top-2 left-3 cursor-pointer"
             onClick={() => {
               navigate("/");
               dispatch(setRecordType("pay"));

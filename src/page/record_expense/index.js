@@ -20,9 +20,12 @@ const RecordExpense = () => {
         </h1>
         <div id="diningGroup" className="flex gap-x-4">
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Foods",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1": newBill.useFor === "Foods",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Foods"));
             }}
@@ -34,9 +37,12 @@ const RecordExpense = () => {
           </div>
 
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Drinks",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1": newBill.useFor === "Drinks",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Drinks"));
             }}
@@ -46,9 +52,13 @@ const RecordExpense = () => {
           </div>
 
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Desserts",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1":
+                  newBill.useFor === "Desserts",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Desserts"));
             }}
@@ -66,9 +76,12 @@ const RecordExpense = () => {
         </h1>
         <div id="transportGroup" className="flex gap-x-4">
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Taxi",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1": newBill.useFor === "Taxi",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Taxi"));
             }}
@@ -79,9 +92,12 @@ const RecordExpense = () => {
             <span>Taxi</span>
           </div>
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Fuel",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1": newBill.useFor === "Fuel",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Fuel"));
             }}
@@ -92,9 +108,13 @@ const RecordExpense = () => {
             <span className="">Fuel</span>
           </div>
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Parking",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1":
+                  newBill.useFor === "Parking",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Parking"));
             }}
@@ -112,9 +132,12 @@ const RecordExpense = () => {
         </h1>
         <div id="entertainmentGroup" className="flex gap-x-4">
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Gym",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1": newBill.useFor === "Gym",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Gym"));
             }}
@@ -126,9 +149,12 @@ const RecordExpense = () => {
           </div>
 
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Games",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1": newBill.useFor === "Games",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Games"));
             }}
@@ -140,10 +166,13 @@ const RecordExpense = () => {
           </div>
 
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1":
-                newBill.useFor === "Music & Movie",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1":
+                  newBill.useFor === "Music & Movie",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Music & Movie"));
             }}
@@ -155,9 +184,12 @@ const RecordExpense = () => {
           </div>
 
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Tours",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1": newBill.useFor === "Tours",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Tours"));
             }}
@@ -176,9 +208,12 @@ const RecordExpense = () => {
         </h1>
         <div id="dailyExpenseGroup" className="flex gap-x-4">
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Books",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1": newBill.useFor === "Books",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Books"));
             }}
@@ -189,10 +224,13 @@ const RecordExpense = () => {
             <span>Books</span>
           </div>
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1":
-                newBill.useFor === "Education",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1":
+                  newBill.useFor === "Education",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Education"));
             }}
@@ -201,10 +239,13 @@ const RecordExpense = () => {
             <span className="">Education</span>
           </div>
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1":
-                newBill.useFor === "Furniture",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1":
+                  newBill.useFor === "Furniture",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Furniture"));
             }}
@@ -213,9 +254,12 @@ const RecordExpense = () => {
             <span className="">Furniture</span>
           </div>
           <div
-            className={classNames("flex flex-col px-3 items-center w-[80px]", {
-              "text-green-500 relative bottom-1": newBill.useFor === "Others",
-            })}
+            className={classNames(
+              "flex flex-col px-3 items-center w-[80px] cursor-pointer",
+              {
+                "text-green-500 relative bottom-1": newBill.useFor === "Others",
+              }
+            )}
             onClick={() => {
               dispatch(setRecordUsage("Others"));
             }}

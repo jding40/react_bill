@@ -19,7 +19,7 @@ const RecordIncome = () => {
             <h1 className="mb-2">
               <strong>{key}</strong>
             </h1>
-            <div id={`${key}Group`} className="flex gap-x-4 flex-wrap">
+            <div id={`${key}Group`} className="flex gap-2  flex-wrap">
               {value.map((type) => (
                 <div
                   key={type}

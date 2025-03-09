@@ -106,7 +106,7 @@ const Record_bill = () => {
       <Outlet />
 
       <div
-        className="h-[94px] border-2 text-center content-center rounded-t-xl text-2xl bg-blue-600 text-white"
+        className="h-[94px] border-2 text-center content-center rounded-t-xl text-2xl bg-blue-600 text-white cursor-pointer"
         onClick={() => {
           console.log("bills.length(before):", bills.length);
           if (

@@ -35,6 +35,9 @@ const billSlice = createSlice({
         id: -1,
       };
     },
+    removeBill: (state, action) => {
+      state.bills = state.bills.filter((bill) => bill.id !== action.payload);
+    },
     setActiveRoute: (state, action) => {
       state.activeRoute = action.payload;
     },
@@ -53,13 +56,17 @@ const billSlice = createSlice({
   },
   extraReducers: (builder) => {
     builder.addCase(getBills.fulfilled, (state, action) => {
-      state.bills = action.payload.reduce((acc, cur) => {
-        if (acc.find((bill) => bill.id === cur.id)) return acc;
-        else {
-          acc.push(cur);
-          return acc;
-        }
-      }, state.bills);
+      if (state.bills.length === 0) {
+        state.bills = action.payload;
+        return;
+      }
+      // state.bills = action.payload.reduce((acc, cur) => {
+      //   if (acc.find((bill) => bill.id === cur.id)) return acc;
+      //   else {
+      //     acc.push(cur);
+      //     return acc;
+      //   }
+      // }, state.bills);
 
       //state.bills = action.payload;
       console.log("Current length of bills is", state.bills.length);
@@ -70,6 +77,7 @@ const billSlice = createSlice({
 export default billSlice.reducer;
 export const {
   addBill,
+  removeBill,
   setActiveRoute,
   setRecordType,
   setRecordUsage,

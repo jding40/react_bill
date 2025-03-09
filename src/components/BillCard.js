@@ -2,9 +2,12 @@ import React, { useState } from "react";
 import classNames from "classnames";
 import { set } from "date-fns";
 import logoMap from "../data/logoMap";
+import BillsModal from "./BillsModal";
 
 const BillCard = ({ billList, timeString, pay, income }) => {
   const [expand, setExpand] = useState(false);
+  const [modalOpen, setModalOpen] = useState(false);
+  const [selectedBills, setSelectedBills] = useState([]);
   console.log(`bill list for ${timeString} is`, billList);
 
   const groupedAmount = billList.reduce((acc, bill) => {
@@ -70,7 +73,16 @@ const BillCard = ({ billList, timeString, pay, income }) => {
       <div className={classNames("mt-2 w-[450px]", { "border-t-1": expand })}>
         {expand &&
           Object.entries(groupedAmount).map(([key, value]) => (
-            <div key={key} className="flex justify-between p-1">
+            <div
+              key={key}
+              className="flex justify-between p-1"
+              onClick={() => {
+                setModalOpen(true);
+                setSelectedBills(
+                  billList.filter((bill) => bill.useFor === key)
+                );
+              }}
+            >
               <div className="flex gap-x-4">
                 <span className="material-symbols-outlined block !text-2xl">
                   {logoMap[key]}
@@ -81,6 +93,9 @@ const BillCard = ({ billList, timeString, pay, income }) => {
             </div>
           ))}
       </div>
+      {modalOpen && (
+        <BillsModal bills={selectedBills} onClose={() => setModalOpen(false)} />
+      )}
     </div>
   );
 };
